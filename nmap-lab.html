@@ -5,28 +5,41 @@
   <title>🔎 Nmap Practice – DP-Ark</title>
 </head>
 <body>
-  <h1>🛡️ Nmap Hands-on Lab</h1>
-  <p>This page documents my hands-on practice with <strong>Nmap</strong>, a powerful network scanning tool used by cybersecurity professionals.</p>
+  <h1>🔎 Nmap Hands-on Lab</h1>
+    <p>This page documents my hands-on practice using Nmap for port scanning and network reconnaissance.</p>
+  <h2>🔍 TCP SYN, Version & OS Scan</h2>
+<ul>
+  <li><strong>Target:</strong> scanme.nmap.org</li>
+  <li><strong>Tools Used:</strong> Nmap (Mac)</li>
+  <li><strong>Scan Types:</strong> Ping Scan, SYN Scan, Version Detection, OS Detection</li>
+</ul>
 
-  <h2>🎯 Lab Goals</h2>
+<h3>📝 Observations</h3>
+<p>I found open ports and services like HTTP (port 80) and SSH (port 22). The version detection gave service banners, and OS detection suggested a Linux-based host.</p>
+
+<h3>💡 Security Interpretation</h3>
+<p>Even with minimal scanning, many details are exposed. An attacker can identify weak services or outdated versions to exploit.</p>
+
+  <h2>🎯 Lab Objectives</h2>
   <ul>
-    <li>Understand how to run basic port scans</li>
-    <li>Explore Nmap output and interpret results</li>
+    <li>Perform basic port scans using Nmap</li>
+    <li>Identify open ports and services</li>
+    <li>Understand TCP vs UDP scans</li>
   </ul>
 
-  <h2>🧑‍💻 Step-by-Step Commands</h2>
-  <ol>
-    <li>Open Terminal</li>
-    <li>Run: <code>nmap scanme.nmap.org</code></li>
-    <li>Wait for the scan to complete</li>
-    <li>Review the open ports and service names</li>
-  </ol>
+  <h2>🧑‍💻 Commands Used</h2>
+  <ul>
+    <li><code>nmap localhost</code> – Scan local ports</li>
+    <li><code>nmap -sS google.com</code> – Stealth SYN scan</li>
+    <li><code>nmap -sU 127.0.0.1</code> – UDP scan on localhost</li>
+  </ul>
 
-  <h2>📝 Observations</h2>
-  <p>I scanned scanme.nmap.org and observed open ports such as 22 (SSH), 80 (HTTP), and 443 (HTTPS).</p>
+  <h2>📌 Observations</h2>
+  <p>I observed that port 80 and 443 were open on certain hosts, and learned how stealth scans work.</p>
 
-  <p>... (I will write what I see during my scan)</p>
+  <p>... (Add your own real output and thoughts here)</p>
 
   <p><a href="skills.html">← Back to Skills</a></p>
 </body>
 </html>
+
