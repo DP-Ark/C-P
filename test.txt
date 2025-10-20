@@ -1,1 +1,0 @@
-git ssh test successful on macos
