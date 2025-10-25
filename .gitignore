@@ -1,0 +1,20 @@
+# Python / virtualenv
+venv/
+**/venv/
+.env
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Editor
+.vscode/
+.idea/
+
+# Logs / databases
+*.log
+*.sqlite3
+
+# Other
+node_modules/
